@@ -25,5 +25,5 @@ jobs:
       env:
           # SonarCloud access token should be generated from https://sonarcloud.io/account/security/
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
-      run: ./gradlew sonarqube --info -Dsonar.organization=$SONAR_ORGANIZATION -Dsonar.branch.name=$BRANCH_NAME
+          SONAR_ORGANIZATION_KEY: lenderdockk
+      run: ./gradlew sonarqube --info -Dsonar.organization=$SONAR_ORGANIZATION_KEY -Dsonar.branch.name=$BRANCH_NAME
