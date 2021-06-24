@@ -14,8 +14,10 @@ java {
 
 sonarqube {
 	properties {
-		property "sonar.projectKey", "la-client"
+		//property "sonar.projectKey", "la-client"
+		property 'sonar.organization', 'lenderdockk'
+		property 'sonar.projectKey', 'LenderDoc_SonarTestTwo'
 		property 'sonar.host.url', 'https://sonarcloud.io'
-		property "sonar.exclusions", "**/*.xml,**/*.html,**/*.css"
+		property 'sonar.exclusions', '**/*.xml,**/*.html,**/*.css'
 	}
 }
