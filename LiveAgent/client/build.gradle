@@ -7,18 +7,10 @@ plugins {
 group 'ttt'
 version '1.0-SNAPSHOT'
 
-java {
-	sourceCompatibility = JavaVersion.VERSION_11
-	targetCompatibility = JavaVersion.VERSION_11
-}
-
 sonarqube {
-	skipProject = true
-
 	properties {
-		//property "sonar.projectKey", "la-client"
-		property 'sonar.organization', 'lenderdockk'
 		property 'sonar.projectKey', 'la-client'
+		property 'sonar.organization', 'lenderdockk'
 		property 'sonar.host.url', 'https://sonarcloud.io'
 		property 'sonar.exclusions', '**/*.xml,**/*.html,**/*.css'
 	}

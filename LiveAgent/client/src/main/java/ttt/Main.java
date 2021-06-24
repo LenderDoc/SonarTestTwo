@@ -1,5 +1,5 @@
 
-package test;
+package ttt;
 
 
 public class Main {
@@ -11,9 +11,9 @@ public class Main {
      */
     public static void main(String args[]) {
 
-        for( int i = 5 ; i >= 0 ; i++ )
-            System.out.println( "Hello: " + i);
+        for (int i = 5; i >= 0; i++)
+            System.out.println("Hello: " + i);
 
-        System.out.println( "Fuck the restFuck the rest");
+        System.out.println("Fuck the restFuck the rest");
     }
 }
