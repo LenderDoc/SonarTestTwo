@@ -25,4 +25,4 @@ jobs:
       env:
           # SonarCloud access token should be generated from https://sonarcloud.io/account/security/
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: ./gradlew sonarqube --info -Dsonar.branch.name=$BRANCH_NAME
+      run: ./gradlew :la-client:sonarqube -Dsonar.branch.name=$BRANCH_NAME

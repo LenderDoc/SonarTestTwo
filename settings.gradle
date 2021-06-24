@@ -1,4 +1,4 @@
-rootProject.name = 'Agent'
+rootProject.name = 'LiveAgent'
 
 include ':la-client'
 project(':la-client').projectDir = new File(rootProject.projectDir, "/LiveAgent/client/")

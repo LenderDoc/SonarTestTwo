@@ -8,6 +8,3 @@ idea.module {
 		file('gradle'),
 	]
 }
-
-task sonarqube {
-}
