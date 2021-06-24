@@ -13,6 +13,8 @@ java {
 }
 
 sonarqube {
+	skipProject = true
+
 	properties {
 		//property "sonar.projectKey", "la-client"
 		property 'sonar.organization', 'lenderdockk'
