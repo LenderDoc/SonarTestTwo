@@ -1,0 +1,21 @@
+plugins {
+	id 'java'
+	id 'idea'
+	id "org.sonarqube" version "3.2.0"
+}
+
+group 'ttt'
+version '1.0-SNAPSHOT'
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_11
+	targetCompatibility = JavaVersion.VERSION_11
+}
+
+sonarqube {
+	properties {
+		property "sonar.projectKey", "la-client"
+		property 'sonar.host.url', 'https://sonarcloud.io'
+		property "sonar.exclusions", "**/*.xml,**/*.html,**/*.css"
+	}
+}

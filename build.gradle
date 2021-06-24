@@ -1,0 +1,13 @@
+plugins {
+	id 'idea'
+}
+
+idea.module {
+	excludeDirs += [
+		file('.idea'),
+		file('gradle'),
+	]
+}
+
+task sonarqube {
+}

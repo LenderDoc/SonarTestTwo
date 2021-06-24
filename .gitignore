@@ -1,0 +1,8 @@
+.idea/
+*.iml
+.metadata/
+.recommenders/
+.gradle/
+# custom gradle build output, because build was already used
+.DS_Store
+.run/
