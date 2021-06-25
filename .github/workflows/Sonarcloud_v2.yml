@@ -24,7 +24,7 @@ jobs:
     - name: Run Sonarcloud on :la-client
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: ./gradlew :la-client:sonarqube --info --debug -Dsonar.branch.name=$BRANCH_NAME
+      run: ./gradlew :la-client:sonarqube -Dsonar.branch.name=$BRANCH_NAME
     - name: Run Sonarcloud on :la-server
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
