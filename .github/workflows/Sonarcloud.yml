@@ -1,4 +1,4 @@
-name: Sonarcloud_v2
+name: Sonarcloud
 
 on:
   schedule:
