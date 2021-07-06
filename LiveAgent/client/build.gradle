@@ -12,6 +12,6 @@ sonarqube {
 		property 'sonar.projectKey', 'la-client'
 		property 'sonar.organization', 'lenderdockk'
 		property 'sonar.host.url', 'https://sonarcloud.io'
-		property 'sonar.exclusions', '**/*.xml,**/*.html,**/*.css'
+		property 'sonar.sources', 'src/**/*'
 	}
 }
