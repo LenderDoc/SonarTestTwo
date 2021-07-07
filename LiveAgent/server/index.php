@@ -10,7 +10,7 @@ foreach ($tokens as $token) {
         // массив с лексемой
         list($id, $text) = $token;
 
-        switch ($id) {
+        switch ($id)   {
             case T_DOC_COMMENT:
                 // нет действий для комментариев
                 break;
