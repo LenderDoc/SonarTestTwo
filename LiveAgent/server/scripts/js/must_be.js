@@ -5,7 +5,7 @@
     var Widget = $.$class({
         construct: function(id) {
             this.id = id;
-            this.elementId = this.buildElementId(id);
+            this.elementId = this.buildElementId(id) ;
 
             this.sendInitRequest_();
         },

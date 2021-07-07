@@ -10,6 +10,6 @@ sonarqube {
         property 'sonar.host.url', 'https://sonarcloud.io'
         property 'sonar.language', 'php'
         property 'sonar.sources', '.'
-        property 'sonar.inclusions', '**/*.php*,scripts/js/**/*'
+        property 'sonar.inclusions', '**/*.php,scripts/js/**/*'
     }
 }
