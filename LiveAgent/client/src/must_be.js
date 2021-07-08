@@ -1,6 +1,6 @@
 (function($) {
 
-    if ($.Widget) { return; }
+    if ($.Widget) { return;   }
 
     var Widget = $.$class({
         construct: function(id) {
