@@ -20,4 +20,5 @@ elseif (mail($email,$subject,$message)) {
 } else {
     echo "<h4>Can't send email to $email</h4>";
 }
+echo 'd'. 'd'.$fu;
 ?>
