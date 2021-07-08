@@ -16,7 +16,7 @@ if (!preg_match("/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/", $email)) {
 
 /* Sends the mail and outputs the "Thank you" string if the mail is successfully sent, or the error string otherwise. */
 elseif (mail($email,$subject,$message)) {
-    echo "<h4>Thank you for sending email</h4>";
+    echo "<h4>Thank you for sending email</h4";
 } else {
     echo "<h4>Can't send email to $email</h4>";
 }
