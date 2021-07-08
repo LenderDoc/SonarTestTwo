@@ -22,8 +22,14 @@ jobs:
     - name: Run Sonarcloud on :la-client
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: ./gradlew :la-client:sonarqube -Dsonar.branch.name=$BRANCH_NAME
+        SONAR_PROJECT_KEY: la-client2
+        SONAR_ORG: lenderdockk
+        SONAR_HOST: 'https://sonarcloud.io'
+      run: ./gradlew :la-client:sonarqube -Dsonar.branch.name=$BRANCH_NAME -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.organization=$SONAR_ORG -Dsonar.host.url=$SONAR_HOST
     - name: Run Sonarcloud on :la-server
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: ./gradlew :la-server:sonarqube -Dsonar.branch.name=$BRANCH_NAME
+        SONAR_PROJECT_KEY: la-server2
+        SONAR_ORG: lenderdockk
+        SONAR_HOST: 'https://sonarcloud.io'
+      run: ./gradlew :la-server:sonarqube -Dsonar.branch.name=$BRANCH_NAME -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.organization=$SONAR_ORG -Dsonar.host.url=$SONAR_HOST

@@ -9,9 +9,6 @@ version '1.0-SNAPSHOT'
 
 sonarqube {
 	properties {
-		property 'sonar.projectKey', 'la-client2'
-		property 'sonar.organization', 'lenderdockk'
-		property 'sonar.host.url', 'https://sonarcloud.io'
 		property 'sonar.sources', 'src'
 	}
 }

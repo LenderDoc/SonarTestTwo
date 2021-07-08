@@ -4,7 +4,7 @@ on:
   pull_request:
     paths:
       - 'LiveAgent/server/**/*.php'
-      - 'LiveAgent/server/scripts/js/**/*'
+      - 'LiveAgent/server/scripts/js/**'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,4 +30,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}    # SonarCloud access token can be generated from https://sonarcloud.io/account/security/
-        run: ./gradlew build :la-server:sonarqube --info
+          SONAR_PROJECT_KEY: la-server2
+          SONAR_ORG: lenderdockk
+          SONAR_HOST: 'https://sonarcloud.io'
+        run: ./gradlew build :la-server:sonarqube -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.organization=$SONAR_ORG -Dsonar.host.url=$SONAR_HOST --info

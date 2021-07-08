@@ -5,9 +5,6 @@ plugins {
 
 sonarqube {
     properties {
-        property 'sonar.projectKey', 'la-server2'
-        property 'sonar.organization', 'lenderdockk'
-        property 'sonar.host.url', 'https://sonarcloud.io'
         property 'sonar.language', 'php'
         property 'sonar.sources', '.'
         property 'sonar.inclusions', '**/*.php,scripts/js/**/*'
