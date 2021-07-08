@@ -1,4 +1,4 @@
-name: sonarcloud
+name: Code scan dispatch
 
 on:
   workflow_dispatch:

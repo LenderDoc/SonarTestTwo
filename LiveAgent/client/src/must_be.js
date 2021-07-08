@@ -14,7 +14,7 @@
         // API - PHP
 
         isInitialized: function() {
-            return this.dateChanged != undefined;
+            return this.dateChanged != undefined ;
         },
 
         initDateChanged: function(dateChanged) {
