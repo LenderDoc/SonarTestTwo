@@ -8,6 +8,6 @@ sonarqube {
         property 'sonar.language', 'php'
         property 'sonar.sources', '.'
         property 'sonar.inclusions', '**/*.php,scripts/js/**/*'
-        property 'sonar.tests', 'tests'
+        property 'sonar.tests', 'test'
     }
 }
