@@ -33,4 +33,4 @@ jobs:
           SONAR_PROJECT_KEY: la-server2
           SONAR_ORG: lenderdockk
           SONAR_HOST: 'https://sonarcloud.io'
-        run: ./gradlew build :la-server:sonarqube -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.organization=$SONAR_ORG -Dsonar.host.url=$SONAR_HOST --info
+        run: ./gradlew build :la-server:sonarqube -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.organization=$SONAR_ORG -Dsonar.host.url=$SONAR_HOST --info --debug
